@@ -1,6 +1,11 @@
 class Todo < ActiveRecord::Base
   def to_pleasent_string
-    is_completed = @completed ? "[x]" : "[ ]"
-    "#{id}. #{due_date.to_s (:short)} #{todo_text} #{is_completed}"
+    if completed == true
+      mark_completed = "[x]"
+      "#{id}. #{mark_completed} #{todo_text} #{due_date}"
+    else
+      mark_not_completed = "[ ]"
+      "#{id}. #{mark_not_completed} #{todo_text} #{due_date}"
+    end
   end
 end
