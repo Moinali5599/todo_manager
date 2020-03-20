@@ -7,12 +7,12 @@ class UsersController < ApplicationController
 
   def show
     user = User.find(params[:id])
-    render plain: user.to_s
+    render plain: user.to_string
   end
 
   def create
     new_user = User.create!(name: params[:name], email: email, passowrd: password)
-    render plain: new_user.to_s
+    render plain: new_user.to_string
   end
 
   def login
