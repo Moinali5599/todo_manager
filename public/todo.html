@@ -1,0 +1,99 @@
+<html>
+
+<head>
+  <title>My Todo List</title>
+  <link rel="stylesheet" type="text/css" href="todo-app.css">
+</head>
+
+<body>
+  <h1>My To-do List</h1>
+  <div class="AddTodo">
+    <input class="AddTodo-title" type="text" placeholder="What's next?">
+    <input class="AddTodo-date" type="date">
+    <input class="AddTodo-button" type="button" value="Add">
+  </div>
+  <section class="TodoSection">
+    <div class="TodoSection-title">
+      <h2>Due Today</h2>
+      <p>0/4</p>
+    </div>
+    <ul>
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoList-checkbox" type="checkbox">
+          <label class="TodoItem-text">Submit SaaS 201 project</label>
+          <p>Overdue</p>
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="delete.png">
+          </a>
+        </div>
+      </li>
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoList-checkbox" type="checkbox">
+          <label class="TodoItem-text">Call accountant</label>
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="delete.png">
+          </a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="TodoSection">
+    <div class="TodoSection-title">
+      <h2>Due Tomorrow</h2>
+      <p>0/3</p>
+    </div>
+    <ul>
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoList-checkbox" type="checkbox">
+          <label class="TodoItem-text">Refill groceries</label>
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="delete.png">
+          </a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="TodoSection">
+    <div class="TodoSection-title">
+      <h2>Remaining</h2>
+      <p>0/3</p>
+    </div>
+    <ul>
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoList-checkbox" type="checkbox">
+          <label class="TodoItem-text">Type something</label>
+          <h5>Jan 21</h5>
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="delete.png">
+          </a>
+        </div>
+      </li>
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoList-checkbox" type="checkbox">
+          <label class="TodoItem-text">Type something</label>
+          <h5>Jan 22</h5>
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="delete.png">
+          </a>
+        </div>
+      </li>
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoList-checkbox" type="checkbox">
+          <label class="TodoItem-text">Type something</label>
+          <h5>Jan 23</h5>
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="delete.png">
+          </a>
+        </div>
+      </li>
+    </ul>
+  </section>
+</body>
+
+</html>
